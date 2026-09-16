@@ -5,7 +5,7 @@
 #include <string> //Allows use of string variables and functions
 
 void PrintFile() { //Test function to check if the text file was being read correctly
-    std::fstream infile("output-Set9.txt"); 
+    std::fstream infile("output-set9.txt"); 
     //Textfile saved in github to allow to be read easily when code is used by others
     std::string line; //Assigning a string variable to use to store and output each line
     while (std::getline(infile,line)) { 
@@ -14,4 +14,9 @@ void PrintFile() { //Test function to check if the text file was being read corr
         std::cout << line << std::endl; //Prints each line of the text file from the variable
     }
     infile.close(); //Closes the text file
+}
+
+int main() {
+    PrintFile();
+    return 0;
 }
